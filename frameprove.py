@@ -62,8 +62,8 @@ class Service:
         
         df_clean_tweets=self.wrangle_data(df_tweet)
         
-        print('Number of Tweet removed:')
-        print(len(df_tweet)-len(df_clean_tweets))
+        print('Number of Tweet removed:{}'.format((len(df_tweet)-len(df_clean_tweets))))
+        
 
         analyzer=SentimentIntensityAnalyzer()
         
